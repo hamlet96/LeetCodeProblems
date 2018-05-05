@@ -18,7 +18,7 @@ public:
 		while (!visit.empty()) {
 			TreeNode* node = visit.top();
 			visit.pop();
-			if (node->val != NULL)values.push_back(node->val);
+			values.push_back(node->val);
 			if (node->right != NULL)visit.push(node->right);
 			if (node->left != NULL)visit.push(node->left);
 			
